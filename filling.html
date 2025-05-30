@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CCMT Choice Filling</title>
+  <link rel="stylesheet" href="stylee.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Choice Filling</a>
+      <a href="#">Manage Filled Choices</a>
+      <a href="#">Choice Interchange</a>
+      <a href="#">Choice Rearrange</a>
+      <a href="#">Multiple Deletion</a>
+      <a href="#">Lock Choice</a>
+    </div>
+    <button class="logout">Logout</button>
+  </div>
+
+  <div class="session-expire-warning">
+    Your current session will be expired within : <span id="timer">16:04</span> minute
+  </div>
+
+  <div class="filters">
+    <select><option>-- Institute Type --</option></select>
+    <select><option>-- Institute --</option></select>
+    <select><option>-- Program --</option></select>
+    <button class="filter-btn">Filter</button>
+    <button class="clear-btn">Clear All Filter</button>
+  </div>
+
+  <div class="main-content">
+    <div class="left">
+      <h4>Available Choice(s) View with :
+        <input type="checkbox" /> Institute Address
+        <input type="checkbox" checked /> Institute Type
+      </h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Institute Name</th>
+            <th>Program Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="availableChoices"></tbody>
+      </table>
+    </div>
+
+    <div class="right">
+      <h4>Filled Choice(s)</h4>
+      <div class="status">
+        <span>Total selected choice(s) to fill : 0</span>
+        <span>Total saved choice(s) : 0</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Institute Name</th>
+            <th>Program Name</th>
+            <th>Choice No.</th>
+            <th>Remove</th>
+            <th>Up</th>
+            <th>Down</th>
+          </tr>
+        </thead>
+        <tbody id="filledChoices"></tbody>
+      </table>
+      <div class="action-buttons">
+        <button class="save-btn">Save and Continue</button>
+        <button class="home-btn">Save and Go to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="#">Terms and Conditions</a> |
+    <a href="#">Hyperlink Policy</a> |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Copyright Policy</a> |
+    <a href="#">Disclaimer</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+}
+
+.navbar {
+  background: #007c85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.navbar .menu a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.logout {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.session-expire-warning {
+  background: #fff4f4;
+  color: red;
+  text-align: right;
+  padding: 10px;
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+.filters {
+  background: #ffffff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.filters select,
+.filters button {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.main-content {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  height: 65vh;
+}
+
+.left, .right {
+  flex: 1;
+  background: white;
+  padding: 10px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.left h4, .right h4 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+thead {
+  background: #e1f5f8;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
+.save-btn, .home-btn {
+  background: #00b8d4;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 10px;
+  background: #005662;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 4px;
+  text-decoration: none;
+}
